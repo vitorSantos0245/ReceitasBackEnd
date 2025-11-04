@@ -1,0 +1,238 @@
+###
+GET http://localhost:3000/usuarios?page=1&limit=5
+
+###
+
+POST http://localhost:3000/usuarios
+Content-Type: application/json
+
+{
+    "nome": "João",
+    "senha": "123",
+    "email": "marcos@gmail.com",
+    "telefone": "(48) 9 9999-9999"
+}
+
+###
+GET http://localhost:3000/categorias
+
+###
+
+POST http://localhost:3000/categorias
+Content-Type: application/json
+
+{
+    "nome": "DOCE"
+}
+
+###
+DELETE http://localhost:3000/usuarios/2
+
+###
+
+PUT http://localhost:3000/usuarios/3
+Content-Type: application/json
+
+{
+    "nome": "João do Star Wars",
+    "senha": "123",
+    "email": "marcos@gmail.com",
+    "telefone": "(48) 9 9999-9999",
+    "ativo": false
+}
+
+###
+
+DELETE http://localhost:3000/categorias/2
+
+###
+
+PUT http://localhost:3000/categorias/2
+Content-Type: application/json
+
+{
+    "nome": "DOCE"
+}
+
+
+###
+
+GET http://localhost:3000/receitas?page=2&limit=10
+
+###
+
+GET http://10.3.118.18:3000/receitas?page=1&limit=10&sort=nome&order=asc
+
+###
+
+POST http://localhost:3000/receitas
+Content-Type: application/json
+
+{
+    "nome": "Bolo de Cenoura",
+    "modo_preparo": "corta cenoura, mistura com trigo, leva ao forno",
+    "ingredientes": "cenoura, trigo e ovo",
+    "usuario_id": 3,
+    "categoria_id": 3,
+    "porcoes": 12,
+    "tempo_preparo_minutos": 45
+}
+
+###
+
+POST http://localhost:3000/receitas
+Content-Type: application/json
+
+{
+    "nome": "Bolo de MILHO",
+    "modo_preparo": "Joga o milho na forma, mistura com trigo, leva ao forno",
+    "ingredientes": "milho, trigo e ovo",
+    "usuario_id": 3,
+    "categoria_id": 3,
+    "porcoes": 2,
+    "tempo_preparo_minutos": 50
+}
+
+###
+
+POST http://localhost:3000/receitas
+Content-Type: application/json
+
+{
+    "nome": "Bolo de chocolate",
+    "modo_preparo": "achocolatado misturado com trigo, leva ao forno",
+    "ingredientes": "achocolatado, trigo e ovo",
+    "usuario_id": 3,
+    "categoria_id": 3,
+    "porcoes": 10,
+    "tempo_preparo_minutos": 25
+}
+
+###
+
+POST http://localhost:3000/receitas
+Content-Type: application/json
+
+{
+    "nome": "Bolo de limão",
+    "modo_preparo": "limão misturado com trigo, leva ao forno",
+    "ingredientes": "limão, trigo e ovo",
+    "usuario_id": 3,
+    "categoria_id": 3,
+    "porcoes": 10,
+    "tempo_preparo_minutos": 85
+}
+
+
+###
+
+POST http://localhost:3000/receitas
+Content-Type: application/json
+
+{
+    "nome": "Bolo de morango",
+    "modo_preparo": "morango misturado com trigo, leva ao forno",
+    "ingredientes": "morango, trigo e ovo",
+    "usuario_id": 3,
+    "categoria_id": 3,
+    "porcoes": 20,
+    "tempo_preparo_minutos": 35
+}
+
+###
+
+POST http://localhost:3000/receitas
+Content-Type: application/json
+
+{
+    "nome": "Bolo de banana",
+    "modo_preparo": "banana misturado com trigo, leva ao forno",
+    "ingredientes": "banana, trigo e ovo",
+    "usuario_id": 3,
+    "categoria_id": 3,
+    "porcoes": 20,
+    "tempo_preparo_minutos": 35
+}
+
+###
+
+POST http://localhost:3000/receitas
+Content-Type: application/json
+
+{
+    "nome": "Bolo de abacaxi",
+    "modo_preparo": "abacaxi misturado com trigo, leva ao forno",
+    "ingredientes": "abacaxi, trigo e ovo",
+    "usuario_id": 3,
+    "categoria_id": 3,
+    "porcoes": 20,
+    "tempo_preparo_minutos": 35
+}
+
+
+###
+
+POST http://localhost:3000/receitas
+Content-Type: application/json
+
+{
+    "nome": "Bolo de whey",
+    "modo_preparo": "whey misturado com trigo, leva ao forno",
+    "ingredientes": "whey, trigo e ovo",
+    "usuario_id": 3,
+    "categoria_id": 3,
+    "porcoes": 20,
+    "tempo_preparo_minutos": 35
+}
+
+###
+
+POST http://localhost:3000/receitas
+Content-Type: application/json
+
+{
+    "nome": "Bolo de 4 leites",
+    "modo_preparo": "4 leites misturado com trigo, leva ao forno",
+    "ingredientes": "4 leites, trigo e ovo",
+    "usuario_id": 3,
+    "categoria_id": 3,
+    "porcoes": 20,
+    "tempo_preparo_minutos": 35
+}
+
+###
+
+POST http://localhost:3000/receitas
+Content-Type: application/json
+
+{
+    "nome": "Bolo de doce de leite",
+    "modo_preparo": "doce de leite misturado com trigo, leva ao forno",
+    "ingredientes": "doce de leite, trigo e ovo",
+    "usuario_id": 3,
+    "categoria_id": 3,
+    "porcoes": 20,
+    "tempo_preparo_minutos": 35
+}
+
+###
+GET http://localhost:3000/receitas/1
+
+###
+# ATUALIZAR UMA RECEITA
+PUT http://localhost:3000/receitas/1
+Content-Type: application/json
+
+{
+    "nome": "Bolo de Cenoura com Cobertura",
+    "modo_preparo": "corta cenoura, mistura com trigo, leva ao forno, joga cobertura",
+    "ingredientes": "cenoura, trigo, ovo e chocolate",
+    "usuario_id": 3,
+    "categoria_id": 3,
+    "porcoes": 15,
+    "tempo_preparo_minutos": 60
+}
+
+###
+# DELETAR UMA RECEITA
+DELETE http://localhost:3000/receitas/1
